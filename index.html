@@ -6,151 +6,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="league-spartan">
     <header>
         <div class="menu">
-            <a href="../index.html">
-                <h1>MatchPhone</h1>
+            <div class="logo-titulo">
+                <a href="../index.html">
+                    <h1>MatchPhone</h1>
+                </a>
+            </div>
 
-            </a>
-
-            <img src="" alt="Logo MatchPhone" class="logo">
-
-            <a href="./MatchPoints.html" class="botao-link active">
-                MatchPoints
-            </a>
-
-            <a href="#" class="botao-link active">
-                Cadastre-se
-            </a>
-
-            <a href="#" class="botao-link active">
-                Login
-            </a>
-
-            <a href="#" class="botao-link active">
-                Meus Rendimentos
-            </a>
+            <div class="menu-botoes">
+                <a href="./matchPoints/MatchPoints.html">
+                    <button>MatchPoints</button>
+                </a>
+                <a href="#">
+                    <button>Cadastre-se</button>
+                </a>
+                <a href="#">
+                    <button>Login</button>
+                </a>
+                <a href="#">
+                    <button>Meus Rendimentos</button>
+                </a>
+            </div>
         </div>
     </header>
 
     <main>
 
         <div class="pai">
-            <div class="presentation">
-                <img src="" alt="Print do MatchPoints para celular">
-                
-                <div class="bottom">
-                    <a href="#" class="botao-link">Baixe o app</a>
+            <div class="recomended">
+                <h2>Matty recomendou para você:</h2>
+
+                <div class="recomended-content">
+                    <img src="./assets/Smartphone recomendado pelo Matty.jpeg" alt="Smartphone recomendado pelo Matty">
+
+                    <div class="link">
+                        <div class="match-recomendacao">
+
+                            <h3 class="modelo">iPhone 15 - 128GB</h3>
+
+                            <div class="match-porque">
+                                <p><strong>Por que indicamos este modelo para você?</strong></p>
+                                <ul>
+                                    <li><strong>Seu orçamento:</strong> Cabe no que você quer gastar</li>
+                                    <li><strong>Seu uso principal:</strong> Perfeito para fotos e redes sociais</li>
+                                    <li><strong>Durabilidade:</strong> Vai durar pelos próximos 3 anos fácil</li>
+                                    <li><strong>Economia:</strong> Está R$ 800 comprando com nossos parceiros</li>
+                                </ul>
+                            </div>
+
+                            <div class="match-preco">
+                                <p class="preco-antigo">De: R$ 5.499</p>
+                                <p class="preco-atual">Por: <strong>R$ 4.699</strong> no Pix</p>
+                                <p class="economia"> Você economiza R$ 800!</p>
+                            </div>
+
+                            <a href="#" class="botao-recomendacao1"> Quero esse!</a>
+                            <a href="#" class="botao-recomendacao2"> Tentar outra vez.</a>
+                        </div>
+                    </div>
                 </div>
-                <p>Nosso aplicativo tem descontos exclusivos!</p>
-                
             </div>
-            
+            <div class="space"></div>
+            <h2>Feedbacks</h2>
+
             <div class="container">
-                <h2>Feedbacks</h2>
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="./assets/Valentina Albuquerque.png" alt="">
                     <p class="name">Valentina Albuquerque</p>
-                    <p>"Queria um MangaPhone novo, mas sem me endividar de novo. O MatchPhone me mostrou um recondicionado perfeito. Economizei R$ 2.000 e ninguém percebe a diferença. Sou fã!”
+                    <p>"Queria um MangaPhone novo, mas sem me endividar de novo. O MatchPhone me mostrou um
+                        recondicionado perfeito. Economizei R$ 2.000 e ninguém percebe a diferença. Sou fã!”
 
                     </p>
                 </div>
-                
+
                 <div class="item">
-                    <img src="" alt="Sansung">
+                    <img src="./assets/Camilly Silva.png" alt="Camilly Silva">
                     <p class="name">Camilly Silva</p>
                     <p>
-                        “Minha colega da faculdade vivia falando desse app. Testei, respondi o quiz e achei um celular que cabe no meu bolso e nas minhas ideias. Consumo consciente virou realidade pra mim.”
+                        “Minha colega da faculdade vivia falando desse app. Testei, respondi o quiz e achei um celular
+                        que cabe no meu bolso e nas minhas ideias. Consumo consciente virou realidade pra mim.”
                     </p>
-                    
+
                 </div>
-                
+
                 <div class="item">
-                    <img src="" alt="iPlace">
+                    <img src="./assets/Alfred Chen.png" alt="Alfred Chen">
                     <p class="name">Alfred Chen</p>
-                    <p>“Vi o MatchPhone no Insta e me surpreendi. Finalmente uma plataforma que une tecnologia, sustentabilidade e dados reais. Uso direto para benchmarking da minha empresa. Favorito absoluto.”</p>
-                    
+                    <p>“Vi o MatchPhone no Insta e me surpreendi. Finalmente uma plataforma que une tecnologia,
+                        sustentabilidade e dados reais. Uso direto para benchmarking da minha empresa. Favorito
+                        absoluto.”</p>
+
                 </div>
-                
+
                 <div class="item">
-                    <img src="" alt="Motorola">
+                    <img src="./assets/Jéssica Lima.png" alt="Jéssica Lima">
                     <p class="name">Jéssica Lima</p>
-                    <p>Troquei de celular sem trocar de dívida. O MatchPhone me mostrou que dá pra ter status sem parcelar o almoço. Já indiquei pra 5 amigas que viviam no vermelho por causa de iPhone.”</p>
+                    <p>Troquei de celular sem trocar de dívida. O MatchPhone me mostrou que dá pra ter status sem
+                        parcelar o almoço. Já indiquei pra 5 amigas que viviam no vermelho por causa de iPhone.”</p>
 
-            </div>
-            <div class="item">
-                <img src="" alt="Mercado livre">
-                <p class="name">Rodrigo Matos</p>
-                <p>“Um colega do telemarketing falou: ‘usa o MatchPhone’. Fiz o teste e comprei um seminovo com garantia. Economizei R$ 1.200 e ainda ganhei cashback por descartar o antigo direito.”</p>
-                
-            </div>
-            
-            <div class="item">
-                <img src="" alt="Santander">
-                <p class="name">Camila Torres</p>
-                <p>“O Instagram me mostrou o MatchPhone na hora certa. Meu celular antigo estava morto. Respondi o chat de IA e em 10 minutos comprei um modelo perfeito pro meu orçamento. Site favorito!”</p>
-                
-            </div>
-            
-            <div class="item">
-                <img src="" alt="Banco do Brasil">
-                <p class="name">Luciano Mendes</p>
-                <p>“Meu irmão economizou R$ 900. Fiz igual. Agora a família toda compara celular antes de comprar. O app virou nossa regra. Menos lixo eletrônico e mais dinheiro no bolso.”</p>
-                
-            </div>
-            
-            <div class="item">
-                <img src="" alt="Kabum!">
-                <p class="name">Sofia Ventura</p>
-                <p>“No fórum de economia circular falaram do MatchPhone. Testei e amei. A calculadora de impacto ambiental me fez escolher um modular. Nunca vi app com tanto propósito e dados úteis.”</p>
-                
-            </div>
-        </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/Carl Jhonson.png" alt="Carl Jhonson">
+                    <p class="name">Carl Jhonson</p>
+                    <p>“Um colega do telemarketing falou: ‘usa o MatchPhone’. Fiz o teste e comprei um seminovo com
+                        garantia. Economizei R$ 1.200 e ainda ganhei cashback por descartar o antigo direito.”</p>
 
-        <div class="mapa">
-            <h3>Mapa com lugares para descarte correto de eletrônicos</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153086.68217867962!2d-35.07430383750002!3d-8.037638999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1936f9fb79bf%3A0x5e99941d49f7d352!2sREEECicle!5e1!3m2!1spt-BR!2sbr!4v1775610965955!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Mapa de lugares para descarte de lixo eletrônico</iframe>
-        </div>
+                </div>
 
-        <div class="matty">
-            <img src="" alt="Nossa IA (Matty)">
-        </div>
+                <div class="item">
+                    <img src="./assets/Taciana Torres.png" alt="Taciana Torres">
+                    <p class="name">Taciana Torres</p>
+                    <p>“O Instagram me mostrou o MatchPhone na hora certa. Meu celular antigo estava morto. Respondi o
+                        chat de IA e em 10 minutos comprei um modelo perfeito pro meu orçamento. Site favorito!”</p>
+
+                </div>
+
+                <div class="item">
+                    <img src="./assets/Luciano Mendes.png" alt="Luciano Mendesl">
+                    <p class="name">Luciano Mendes</p>
+                    <p>“Meu irmão economizou R$ 900. Fiz igual. Agora a família toda compara celular antes de comprar. O
+                        app virou nossa regra. Menos lixo eletrônico e mais dinheiro no bolso.”</p>
+
+                </div>
+
+                <div class="item">
+                    <img src="./assets/Sofia Ventura.png" alt="Sofia Ventura">
+                    <p class="name">Sofia Ventura</p>
+                    <p>“No fórum de economia circular falaram do MatchPhone. Testei e amei. A calculadora de impacto
+                        ambiental me fez escolher um modular. Nunca vi app com tanto propósito e dados úteis.”</p>
+
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <div class="mapa">
+                <h3>Mapa com lugares para descarte correto de eletrônicos</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153086.68217867962!2d-35.07430383750002!3d-8.037638999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1936f9fb79bf%3A0x5e99941d49f7d352!2sREEECicle!5e1!3m2!1spt-BR!2sbr!4v1775610965955!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">Mapa de lugares para descarte de lixo
+                    eletrônico</iframe>
+            </div>
+
+            <div class="matty">
+
+                <a href="#"><img src="./assets/Matty.png" alt="Nossa IA (Matty)"></a>
+            </div>
 
     </main>
+    <div class="space"></div>
 
-        <footer>
-            
-            <div class="footer">
-                <div class="sobre">
-                    <h4>Sobre nós</h4>
-                    <a href="">Quem somos?</a>
-                    <a href="https://www.instagram.com/_aghata_christie_/">Aghata Guerra</a>
-                    <a href="https://www.instagram.com/arii.domingos/">Arielle Beatriz</a>
-                    <a href="https://www.instagram.com/jonaz_zzzzz/">Jonatas Lima</a>
-                    <a href="https://www.instagram.com/jamyrs2/">Jamilly Rejane</a>
-                    <a href="https://www.instagram.com/mtsgmrs/">Mateus Guimarães</a>
-                    <a href="">Trabalhe conosco</a>
-                </div>
+    <footer>
 
-                <div class="why">
-                    <h4>Por que o MatchPhone?</h4>
-                    <a href="">Como funciona?</a>
-                    <a href="">Lojas físicas</a>
-                    <a href="">Indique e ganhe</a>
-                </div>
-
-                <div class="redes">
-                    <h4>Nossas redes</h4>
-                    <a href="https://www.instagram.com/matchphonepe/">Instagram</a>
-                    <a href="">Baixe o app</a>
-                    <a href=""></a>
-                </div>
+        <div class="footer">
+            <div class="sobre">
+                <h4>Sobre nós</h4>
+                <ul>
+                    <li> <a href="">Quem somos?</a>
+                        <a href="https://www.instagram.com/_aghata_christie_/">Aghata Guerra</a>
+                    </li>
+                    <li><a href="https://www.instagram.com/arii.domingos/">Arielle Beatriz</a></li>
+                    <li><a href="https://www.instagram.com/jonaz_zzzzz/">Jonatas Lima</a></li>
+                    <li><a href="https://www.instagram.com/jamyrs2/">Jamilly Rejane</a> </li>
+                    <li><a href="https://www.instagram.com/mtsgmrs/">Mateus Guimarães</a></li>
+                    <li><a href="">Trabalhe conosco</a></li>
+                </ul>
             </div>
 
-        </footer>
+            <div class="why">
+                <h4>Por que o MatchPhone?</h4>
+                <ul>
+                    <li><a href="">Como funciona?</a></li>
+                    <li><a href="">Lojas físicas</a></li>
+                    <li><a href="">Indique e ganhe</a></li>
+                </ul>
+            </div>
+
+            <div class="redes">
+                <h4>Nossas redes</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/matchphonepe/">Instagram</a>
+
+                    <li><a href="">Baixe o app</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
 
     </div>
 
