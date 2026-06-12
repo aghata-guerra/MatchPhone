@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatchPhone | Análise Inteligente</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>MatchPhone</h1>
+    <h2>Análise Inteligente</h2>
+    <p>
+      Descubra se você realmente precisa trocar de celular e receba uma recomendação
+      mais consciente de acordo com o seu perfil.
+    </p>
+  </header>
+
+  <main>
+    <section id="introducao">
+      <h3>Como funciona</h3>
+      <p>
+        Responda as perguntas abaixo para que o MatchPhone analise sua necessidade,
+        recomende a melhor escolha e ajude você a evitar compras por impulso.
+      </p>
+    </section>
+
+    <section id="formulario-api">
+      <h3>Informe seu perfil</h3>
+
+      <form>
+        <fieldset>
+          <legend>Seu uso atual</legend>
+
+          <div>
+            <label for="celularAtual">Seu celular atual ainda funciona bem?</label>
+            <select id="celularAtual" name="celularAtual">
+              <option value="">Selecione</option>
+              <option value="sim">Sim</option>
+              <option value="mais-ou-menos">Mais ou menos</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="tempoUso">Há quanto tempo você usa seu celular atual?</label>
+            <select id="tempoUso" name="tempoUso">
+              <option value="">Selecione</option>
+              <option value="menos-1-ano">Menos de 1 ano</option>
+              <option value="1-2-anos">1 a 2 anos</option>
+              <option value="2-3-anos">2 a 3 anos</option>
+              <option value="mais-3-anos">Mais de 3 anos</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="motivoTroca">Por que você quer trocar de celular?</label>
+            <select id="motivoTroca" name="motivoTroca">
+              <option value="">Selecione</option>
+              <option value="necessidade">Porque realmente preciso</option>
+              <option value="desempenho">Porque o desempenho está ruim</option>
+              <option value="camera">Porque quero uma câmera melhor</option>
+              <option value="bateria">Porque a bateria não dura</option>
+              <option value="aparencia">Porque quero um modelo mais bonito</option>
+              <option value="status">Porque quero um modelo mais atual</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>O que você procura</legend>
+
+          <div>
+            <p>Quais são suas prioridades?</p>
+
+            <div>
+              <input type="checkbox" id="camera" name="prioridades" value="camera">
+              <label for="camera">Câmera</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="bateria" name="prioridades" value="bateria">
+              <label for="bateria">Bateria</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="desempenho" name="prioridades" value="desempenho">
+              <label for="desempenho">Desempenho</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="estudos" name="prioridades" value="estudos">
+              <label for="estudos">Estudos</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="trabalho" name="prioridades" value="trabalho">
+              <label for="trabalho">Trabalho</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="redesSociais" name="prioridades" value="redesSociais">
+              <label for="redesSociais">Redes sociais</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="jogos" name="prioridades" value="jogos">
+              <label for="jogos">Jogos</label>
+            </div>
+          </div>
+
+          <div>
+            <label for="orcamento">Qual é o seu orçamento máximo?</label>
+            <input type="number" id="orcamento" name="orcamento" placeholder="Ex: 2000">
+          </div>
+
+          <div>
+            <label for="recondicionado">Você aceitaria um aparelho recondicionado ou usado em bom estado?</label>
+            <select id="recondicionado" name="recondicionado">
+              <option value="">Selecione</option>
+              <option value="sim">Sim</option>
+              <option value="talvez">Talvez</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Consumo consciente</legend>
+
+          <div>
+            <label for="compraImpulso">Você acha que sua vontade de trocar pode estar ligada a impulso, status ou tendência?</label>
+            <select id="compraImpulso" name="compraImpulso">
+              <option value="">Selecione</option>
+              <option value="sim">Sim</option>
+              <option value="talvez">Talvez</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="observacoes">Se quiser, explique melhor sua situação</label>
+            <textarea id="observacoes" name="observacoes" rows="5" placeholder="Ex: meu celular ainda funciona, mas quero trocar porque saiu um modelo novo..."></textarea>
+          </div>
+        </fieldset>
+
+        <div>
+          <button type="submit">Analisar perfil</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="resultado">
+      <h3>Resultado da análise</h3>
+
+      <article id="recomendacao">
+        <h4>Recomendação</h4>
+        <p></p>
+      </article>
+
+      <article id="conscientizacao">
+        <h4>Conscientização</h4>
+        <p></p>
+      </article>
+
+      <article id="avaliacao-troca">
+        <h4>A troca é realmente necessária?</h4>
+        <p></p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>MatchPhone - Consumo consciente de smartphones</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
