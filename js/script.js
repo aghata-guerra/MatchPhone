@@ -3,6 +3,13 @@ const recomendacaoTexto = document.querySelector("#recomendacao p");
 const conscientizacaoTexto = document.querySelector("#conscientizacao p");
 const avaliacaoTrocaTexto = document.querySelector("#avaliacao-troca p");
 
+const toggle = document.getElementById("menu-toggle");
+const menuBotoes = document.getElementById("menu-botoes");
+
+toggle.addEventListener("click", () => {
+  menuBotoes.classList.toggle("aberto");
+});
+
 formulario.addEventListener("submit", async (event) => {
   event.preventDefault();
 
