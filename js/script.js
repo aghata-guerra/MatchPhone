@@ -1,5 +1,3 @@
-API_KEY; 
-
 const formulario = document.querySelector("form");
 const recomendacaoTexto = document.querySelector("#recomendacao p");
 const conscientizacaoTexto = document.querySelector("#conscientizacao p");
@@ -54,38 +52,35 @@ Regras:
 `;
 
   try {
-    const resposta = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-goog-api-key": API_KEY
-        },
-        body: JSON.stringify({
-          contents: [
-            {
-              parts: [
-                {
-                  text: prompt
-                }
-              ]
-            }
-          ],
-          generationConfig: {
-            responseMimeType: "application/json",
-            responseSchema: {
-              type: "OBJECT",
-              properties: {
-                recomendacao: { type: "STRING" },
-                conscientizacao: { type: "STRING" },
-                avaliacao: { type: "STRING" }
-              },
-              required: ["recomendacao", "conscientizacao", "avaliacao"]
-            }
+    const resposta = await fetch("/api/gemini", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        contents: [
+          {
+            parts: [
+              {
+                text: prompt
+              }
+            ]
           }
-        })
-      }
+        ],
+        generationConfig: {
+          responseMimeType: "application/json",
+          responseSchema: {
+            type: "OBJECT",
+            properties: {
+              recomendacao: { type: "STRING" },
+              conscientizacao: { type: "STRING" },
+              avaliacao: { type: "STRING" }
+            },
+            required: ["recomendacao", "conscientizacao", "avaliacao"]
+          }
+        }
+      })
+    }
     );
 
     if (!resposta.ok) {
