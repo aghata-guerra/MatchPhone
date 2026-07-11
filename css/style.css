@@ -22,7 +22,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    background-color: #4477a0;
+    color: #f5f5dc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "League Spartan", sans-serif;
+    font-size: 16px;
 }
 
 h1 {
@@ -253,7 +266,7 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
     align-items: start;
-    
+
 }
 
 .item img {
@@ -274,15 +287,17 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 16px;
-        align-items: center;
+    align-items: center;
 }
-.mapa h3  {
-    grid-column: span 2; 
+
+.mapa h3 {
+    grid-column: span 2;
     text-align: center;
 }
-.mapa iframe{
-       width: 100%;
-       grid-column: span 2;
+
+.mapa iframe {
+    width: 100%;
+    grid-column: span 2;
 }
 
 .matty {
@@ -315,22 +330,95 @@ h2 {
     border-radius: 50%;
     object-fit: cover;
 }
+.matty-tooltip {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
 
+.matty-tooltip.escondido {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.matty:hover .matty-tooltip {
+  opacity: 1 !important;
+  display: block !important;
+}
 .footer {
     padding: 24px;
     width: 800px;
     margin: 48px auto;
     border-radius: 24px;
     box-sizing: border-box;
-    
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
-.footer li{
+
+.footer li {
     margin-top: 10px;
-    
+
 }
-.footer ul{
+
+.footer ul {
     list-style: none;
+}
+@media (max-width: 768px) {
+
+
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-botoes {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    padding: 16px 0;
+    position: static; 
+  }
+
+  .menu-botoes.aberto {
+    display: flex;
+  }
+
+  .menu-botoes a,
+  .menu-botoes button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 36px; 
+  }
+
+  .pai {
+    width: 100%;       
+    margin: 24px auto;
+    padding: 16px;
+  }
+
+ 
+  .recomended-content {
+    flex-direction: column;
+  }
+
+  .recomended img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);   }
+
+ 
+  .footer {
+    width: 100%;
+    grid-template-columns: 1fr; 
+    }
 }
